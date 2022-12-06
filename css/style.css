@@ -74,7 +74,6 @@ p {
 }
 .list-group {
   display: flex;
-
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
@@ -230,10 +229,9 @@ button {
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: #1f1e1e;
+  background-color: #686655;
   right: 0;
   left: 0;
-
   transition: all 0.5s ease-in-out;
 }
 .navbar-fixed ul {
@@ -255,7 +253,7 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link {
   padding: 0 11px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
@@ -299,15 +297,15 @@ button {
   margin-left: -25%;
 }
 .carousel-item img {
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 
 }
 .carousel-item::after {
   position: absolute;
     content: '';
-    background: linear-gradient(to right, #454546 10%, #373636 90%);
-    opacity: 0.60;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 25%,rgba(255,255,255,0) 65%);
+    opacity: 0.80;
     width: 100%;
     height: 100%;
     top: 0;
@@ -325,49 +323,49 @@ button {
   position: relative;
 }
 .banner_main_a {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/about_banner.jpeg);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_b {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/projects_banner.png);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_c {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/bannerecommerce.png);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_d {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/careerbannerimage.png);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_e {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/contactbanner.png);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_f {
-  background: linear-gradient(to right, rgba(105, 103, 103, 0.78), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/clientreviewbanner.png);
   background-repeat: no-repeat;
   min-height: 470px;
   background-size: 100% 100%;
 }
 .banner_main_microservices {
-  background: linear-gradient(to right, rgb(0 0 0 / 38%), rgb(0 0 0 / 66%) 20%),
+  background: linear-gradient(to bottom right, rgb(255, 255, 255, 1) 15%,rgba(255,255,255,0) 69%),
     url(../images/indexbanner2.jpeg);
   background-repeat: no-repeat;
   min-height: 470px;
@@ -622,7 +620,7 @@ button {
   color: #d1960d;
 }
 
-.sdlc {
+/* .sdlc {
   margin-top: 4%;
 }
 
@@ -696,13 +694,13 @@ button {
   border-top-left-radius: 13px;
   border-bottom-right-radius: 13px;
   z-index: 5;
-}
+} */
 .yeti_ul {
   margin: 0;
 }
 .our_excellence {
   margin-top: 4%;
-  background: linear-gradient(to right, #e3b080 2%, #dec7b1 75%);
+  /* background: linear-gradient(to right, #5105596e 2%, rgb(226, 215, 215) 75%); */
   position: relative;
   display: block;
 }
@@ -712,7 +710,8 @@ button {
   bottom: 0px;
 }
 .excellence_image img {
-  height: 350px;
+  height: 300px;
+  object-fit: contain;
 }
 .excellence_content {
   padding-top: 3%;
@@ -1341,6 +1340,13 @@ input[type="file"]::file-selector-button:hover {
   padding: 7px;
   margin-top: 3%;
 }
+.uk_contact a {
+  text-decoration: none !important;
+  color: #6d6f70;
+}
+.uk_contact a:hover {
+  color: #955810;
+}
 .contact_main {
   margin-top: 2%;
 }
@@ -1399,6 +1405,13 @@ input[type="file"]::file-selector-button:hover {
   text-align: center;
   margin-top: 2%;
 }
+.address_details p {
+  margin: 0;
+  padding: 2px;
+}
+.address_details h5 {
+  color: rgb(255, 255, 255);
+}
 
 .nepal_contact h5 {
   background-color: #d1960d;
@@ -1407,7 +1420,14 @@ input[type="file"]::file-selector-button:hover {
   padding: 3px;
   font-size: 18px;
 }
+.nepal_contact a {
+  text-decoration: none;
+  color:rgb(105, 100, 100)
+}
 
+.nepal_contact a:hover {
+  color: #955810;
+}
 .social_links a {
   display: inline-block;
   text-decoration: none;
@@ -1629,7 +1649,7 @@ input[type="file"]::file-selector-button:hover {
 }
 .text-bg {
   margin-top: 20%;
-  color: #fff;
+  color: rgb(93, 63, 63);
 }
 .about_digital {
   margin-top: 2%;
@@ -1804,8 +1824,11 @@ input[type="file"]::file-selector-button:hover {
   text-align: center;
   top: 35%;
 }
+.carousel-caption h2 {
+  color: #ca971e;
+}
 .carousel-caption h5 {
-  color: #D1960D
+  color: #510559;
 }
 .carousel-caption button {
   margin-top: 3%;
@@ -1831,6 +1854,11 @@ input[type="file"]::file-selector-button:hover {
   float: left;
   margin-top: -25%;
   margin-left: -25%;
+}
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+
 }
 .navigation .navbar {
   float: none;
@@ -2025,17 +2053,6 @@ input[type="file"]::file-selector-button:hover {
   .logo_domain p {
     text-align: justify;
   }
-
-  .domain_data {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .domain_features_data {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
   .our_logos img {
     width: 100%;
   }
@@ -2071,23 +2088,6 @@ input[type="file"]::file-selector-button:hover {
   }
   .dropdown_header p {
     text-align: justify;
-  }
-  .logo_app p {
-    text-align: justify;
-  }
-  .logo_domain p {
-    text-align: justify;
-  }
-
-  .domain_data {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .domain_features_data {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
   }
   .about_image_digital img {
     width: 100%;
